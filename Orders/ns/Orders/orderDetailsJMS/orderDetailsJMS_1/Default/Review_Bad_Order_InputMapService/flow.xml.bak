@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+
+  <!-- nodes -->
+
+<INVOKE SERVICE="Orders.orderDetailsJMS.orderDetailsJMS_1.Default:Review_Bad_Order_QueueTask">
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/OrderRequest;4;0;BPMExerSupport.document.request:OrderRequest" TO="/TaskData;2;0/OrderRequest;2;0">
+</MAPCOPY>
+</MAP>
+</INVOKE>
+</FLOW>
