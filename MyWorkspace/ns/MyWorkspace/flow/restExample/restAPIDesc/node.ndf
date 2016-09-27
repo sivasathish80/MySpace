@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">restDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">MyWorkspace.flow.restExample:restAPIDesc</value>
+  <value name="node_pkg">MyWorkspace</value>
+  <value name="is_public">false</value>
+  <record name="generalInfo" javaclass="com.wm.util.Values">
+    <value name="specVersion">2.0</value>
+    <value name="hostName">MCSSIV02.eur.ad.sag</value>
+    <value name="basePath">/rest</value>
+    <array name="schemes" type="value" depth="1">
+      <value>http</value>
+    </array>
+    <array name="consumes" type="value" depth="1">
+      <value>application/json</value>
+    </array>
+    <array name="produces" type="value" depth="1">
+      <value>application/json</value>
+    </array>
+  </record>
+  <record name="appInfo" javaclass="com.wm.util.Values">
+    <value name="appVersion">1.0</value>
+    <null name="description"/>
+    <value name="title">restAPIDescSample</value>
+  </record>
+  <record name="restResources" javaclass="com.wm.util.Values">
+    <record name="MyWorkspace.flow.restExample.newRest1" javaclass="com.wm.util.Values">
+      <value name="nsName">MyWorkspace.flow.restExample.newRest1</value>
+      <null name="path"/>
+      <null name="suffix"/>
+      <record name="operations" javaclass="com.wm.util.Values">
+        <record name="POST" javaclass="com.wm.util.Values">
+          <value name="operationType">POST</value>
+          <value name="nsName">MyWorkspace.flow.restExample.newRest1:_post</value>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="$path" javaclass="com.wm.util.Values">
+              <value name="name">$path</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <null name="description"/>
+              <Boolean name="isRequired">false</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+            </record>
+            <record name="$resourceID" javaclass="com.wm.util.Values">
+              <value name="name">$resourceID</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <null name="description"/>
+              <Boolean name="isRequired">false</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+            </record>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">Successful</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+        <record name="GET" javaclass="com.wm.util.Values">
+          <value name="operationType">GET</value>
+          <value name="nsName">MyWorkspace.flow.restExample.newRest1:_get</value>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="ss" javaclass="com.wm.util.Values">
+              <value name="name">ss</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <null name="description"/>
+              <Boolean name="isRequired">true</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+            </record>
+            <record name="$path" javaclass="com.wm.util.Values">
+              <value name="name">$path</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <null name="description"/>
+              <Boolean name="isRequired">false</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+            </record>
+            <record name="$resourceID" javaclass="com.wm.util.Values">
+              <value name="name">$resourceID</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <null name="description"/>
+              <Boolean name="isRequired">false</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+            </record>
+          </record>
+          <record name="responseParam" javaclass="com.wm.util.Values">
+            <value name="name">rsOut</value>
+            <value name="source">FORMDATA</value>
+            <value name="type">STRING</value>
+            <null name="description"/>
+            <Boolean name="isRequired">true</Boolean>
+            <Boolean name="isArray">false</Boolean>
+            <null name="defaultValue"/>
+            <null name="refDefinition"/>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">Successful</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+        <record name="PUT" javaclass="com.wm.util.Values">
+          <value name="operationType">PUT</value>
+          <value name="nsName">MyWorkspace.flow.restExample.newRest1:_put</value>
+          <record name="parameters" javaclass="com.wm.util.Values">
+            <record name="$path" javaclass="com.wm.util.Values">
+              <value name="name">$path</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <null name="description"/>
+              <Boolean name="isRequired">false</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+            </record>
+            <record name="$resourceID" javaclass="com.wm.util.Values">
+              <value name="name">$resourceID</value>
+              <value name="source">FORMDATA</value>
+              <value name="type">STRING</value>
+              <null name="description"/>
+              <Boolean name="isRequired">false</Boolean>
+              <Boolean name="isArray">false</Boolean>
+              <null name="defaultValue"/>
+              <null name="refDefinition"/>
+            </record>
+          </record>
+          <record name="responses" javaclass="com.wm.util.Values">
+            <record name="200" javaclass="com.wm.util.Values">
+              <value name="statusCode">200</value>
+              <value name="description">Successful</value>
+              <Boolean name="returnOutput">true</Boolean>
+            </record>
+            <record name="401" javaclass="com.wm.util.Values">
+              <value name="statusCode">401</value>
+              <value name="description">Access Denied</value>
+              <Boolean name="returnOutput">false</Boolean>
+            </record>
+          </record>
+        </record>
+      </record>
+    </record>
+  </record>
+  <record name="restDefinitions" javaclass="com.wm.util.Values">
+  </record>
+</Values>
